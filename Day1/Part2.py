@@ -1,6 +1,6 @@
-file = open("CalibrationValues.txt", "r")
+file = open('CalibrationValues.txt', 'r')
 calibrationSum = 0
-digitList = ["one","two","three","four","five","six","seven","eight","nine"]
+digitList = ['one','two','three','four','five','six','seven','eight','nine']
 
 def checkIfNumber(startPosition, endPosition, line):
   if(endPosition < len(line)):
@@ -42,4 +42,4 @@ for line in file:
   calibrationNumber = f'{numbersInLine[0]}{numbersInLine[-1]}'
   calibrationSum += int(calibrationNumber)
 
-print("Total Sum:", calibrationSum)
+print('Total Sum:', calibrationSum)
